@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('diems', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('tan_anh_tuan_id')->constrained('tan_anh_tuans')->onDelete('cascade');
+            $table->foreignId('pham_duc_quyen_id')->constrained('pham_duc_quyens')->onDelete('cascade');
             $table->string('ten_mon_hoc');
             $table->float('diem');
             $table->timestamps();

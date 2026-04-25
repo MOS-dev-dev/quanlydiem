@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Diem extends Model
 {
-    protected $fillable = ['tan_anh_tuan_id', 'ten_mon_hoc', 'diem'];
+    protected $fillable = ['pham_duc_quyen_id', 'ten_mon_hoc', 'diem'];
 
-    public function tanAnhTuan()
+    public function phamDucQuyen()
     {
-        return $this->belongsTo(TanAnhTuan::class);
+        return $this->belongsTo(PhamDucQuyen::class);
     }
 }
